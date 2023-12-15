@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-qgzdjl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/jvm-build-foex-tenant/jvm-build-suite-application-kfys/jvm-build-suite-component-qgzdjl@sha256:7e64ac7a4c0da350a151db5249e5f081dc72f8190d20c0f4f3ea7da87f1ac825
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
